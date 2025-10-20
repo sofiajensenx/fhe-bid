@@ -1,6 +1,6 @@
 export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000' as const;
 
-const envAddress = (import.meta.env.VITE_CONTRACT_ADDRESS ?? ZERO_ADDRESS) as `0x${string}`;
+const envAddress = "0xd8d3D9A1f59e2449E4614Df697bEa6066c7059bA" as `0x${string}`;
 
 export const CONTRACT_ADDRESS = envAddress;
 export const HAS_CONTRACT_ADDRESS = CONTRACT_ADDRESS !== ZERO_ADDRESS;
