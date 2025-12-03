@@ -8,11 +8,11 @@ import {
     ebool,
     externalEuint64
 } from "@fhevm/solidity/lib/FHE.sol";
-import {SepoliaConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
+import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 
 /// @title EncryptedAuction
 /// @notice Confidential auction contract where bids remain encrypted until completion.
-contract EncryptedAuction is SepoliaConfig {
+contract EncryptedAuction is ZamaEthereumConfig {
     struct Auction {
         address seller;
         string title;
